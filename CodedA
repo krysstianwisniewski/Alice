@@ -1,0 +1,36 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <float.h>
+
+int main ()
+
+{
+
+    double x, y, z, m;
+    double min, max, a1, a2, a3;
+
+    printf("Wprowadz x: ");
+    scanf("%lf", &x);
+
+    printf("Wprowadz y: ");
+    scanf("%lf", &y);
+
+    printf("Wprowadz z: ");
+    scanf("%lf", &z);
+
+    min = +DBL_MAX;
+
+
+    if (min>x) {min=x;}
+    if (min>y) {min=y;}
+    if (min>z) {min=z;}
+    m=min;
+
+    printf("Najmniejsza liczba to: \n");
+    printf("%lf", m);
+
+
+
+
+    return 0;
+}
